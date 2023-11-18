@@ -1,114 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      defer
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      defer
-    ></script>
 
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <nav>
-      <div class="logo"><ion-icon name="thumbs-up"></ion-icon>Dashboard</div>
-      <div class="nav-group">
-        <a href="">
-          <ion-icon name="home"></ion-icon>
-          Home
-        </a>
-        <a href="">
-          <ion-icon name="person"></ion-icon>
-          Profile
-        </a>
-        <a href="">
-          <ion-icon name="chatbox"></ion-icon>
-          Messages
-        </a>
-        <a href="">
-          <ion-icon name="time"></ion-icon>
-          History
-        </a>
-        <a href="">
-          <ion-icon name="list"></ion-icon>
-          Tasks
-        </a>
-        <a href="">
-          <ion-icon name="people"></ion-icon>
-          Communities
-        </a>
-      </div>
-      <div class="nav-group">
-        <a href="">
-          <ion-icon name="settings"></ion-icon>
-          Settings
-        </a>
-        <a href="">
-          <ion-icon name="help-circle"></ion-icon>
-          Support
-        </a>
-        <a href="">
-          <ion-icon name="shield-checkmark"></ion-icon>
-          Privacy
-        </a>
-      </div>
-    </nav>
-    <header>
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo"><ion-icon name="thumbs-up"></ion-icon>Dashboard</div>
+    <div class="nav-group">
+      <a href="">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </a>
+      <a href="">
+        <ion-icon name="person"></ion-icon>
+        Profile
+      </a>
+      <a href="">
+        <ion-icon name="chatbox"></ion-icon>
+        Messages
+      </a>
+      <a href="">
+        <ion-icon name="time"></ion-icon>
+        History
+      </a>
+      <a href="">
+        <ion-icon name="list"></ion-icon>
+        Tasks
+      </a>
+      <a href="">
+        <ion-icon name="people"></ion-icon>
+        Communities
+      </a>
+    </div>
+    <div class="nav-group">
+      <a href="">
+        <ion-icon name="settings"></ion-icon>
+        Settings
+      </a>
+      <a href="">
+        <ion-icon name="help-circle"></ion-icon>
+        Support
+      </a>
+      <a href="">
+        <ion-icon name="shield-checkmark"></ion-icon>
+        Privacy
+      </a>
+    </div>
+  </nav>
+  <header>
+    <div>
       <div>
-        <div>
-          <ion-icon name="search"></ion-icon>
-          <input type="text" />
-        </div>
-        <div>
-          <ion-icon name="notifications"></ion-icon>
-          <img
-            src="./img/Sticker 6.svg"
-            alt="user image of a panda"
-            width="40px"
-            height="40px"
-            class="user-image"
-          />
-          <a href="">Kevin Malone</a>
+        <ion-icon name="search"></ion-icon>
+        <input type="text" />
+      </div>
+      <div>
+        <ion-icon name="notifications"></ion-icon>
+        <img src="./img/Sticker 6.svg" alt="user image of a panda" width="40px" height="40px" class="user-image" />
+        <a href="">Kevin Malone</a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="./img/Sticker 6.svg" alt="user image of a panda" width="64px" height="64px" class="user-image" />
+        <div class="greeting">
+          <p>Hi there,</p>
+          <h1>Kevin Malone (@kmalone)</h1>
         </div>
       </div>
 
       <div>
-        <div>
-          <img
-            src="./img/Sticker 6.svg"
-            alt="user image of a panda"
-            width="64px"
-            height="64px"
-            class="user-image"
-          />
-          <div class="greeting">
-            <p>Hi there,</p>
-            <h1>Kevin Malone</h1>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+  </header>
+  <main>
+    <section>
+      <h2>Your Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
           </div>
         </div>
-
-        <div>
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="project">
+          <h3>Title</h3>
+          <p>This is a placeholder paragraph</p>
+          <div class="project-controls">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="eye-outline"></ion-icon>
+            <ion-icon name="share-social-outline"></ion-icon>
+          </div>
         </div>
       </div>
-    </header>
-    <main></main>
-  </body>
+    </section>
+
+    <aside>
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcements-articles">
+          <article>
+            <h4>Title</h4>
+            <p>This is a placeholder paragraph</p>
+          </article>
+          <hr>
+          <article>
+            <h4>Title</h4>
+            <p>This is a placeholder paragraph</p>
+          </article>
+          <hr>
+          <article>
+            <h4>Title</h4>
+            <p>This is a placeholder paragraph</p>
+          </article>
+        </div>
+      </section>
+      <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-users">
+          <div>
+            <img src="./img/Sticker 6.svg" alt="image of user" width="40px" height="40px" class="user-image">
+            <p>@user<br><span>User Name</span></p>
+          </div>
+          <div>
+            <img src="./img/Sticker 6.svg" alt="image of user" width="40px" height="40px" class="user-image">
+            <p>@user<br><span>User Name</span></p>
+          </div>
+          <div>
+            <img src="./img/Sticker 6.svg" alt="image of user" width="40px" height="40px" class="user-image">
+            <p>@user<br><span>User Name</span></p>
+          </div>
+          <div>
+            <img src="./img/Sticker 6.svg" alt="image of user" width="40px" height="40px" class="user-image">
+            <p>@user<br><span>User Name</span></p>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </main>
+</body>
+
 </html>

@@ -117,6 +117,7 @@ header a {
 
 h1 {
   color: var(--zapote);
+  font-size: 1.75rem;
 }
 
 header button {
@@ -143,4 +144,88 @@ header ion-icon {
 main {
   background-color: var(--light-violet);
   grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
+  gap: 24px;
+  padding: 24px;
+}
+
+main section, aside {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  gap: 16px;
+}
+
+aside {
+  gap: 40px;
+}
+
+h2, h3, .project-controls {
+  flex: 0 0 auto;
+  color: var(--dark-gray);
+}
+
+.projects {
+  flex: 1;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  border-left: 8px solid var(--violet);
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px #00000024;
+}
+
+.project p {
+  flex: 1;
+}
+
+.project-controls {
+  display: flex;
+  font-size: 1.75rem;
+  justify-content: end;
+}
+
+aside section, aside div {
+  flex: 1;
+}
+
+aside section {
+  gap: 16px;
+}
+
+.announcements-articles, .trending-users {
+  color: var(--dark-gray);
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #00000024;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+hr {
+  border: 1px solid var(--light-gray);
+}
+
+.trending-users div {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trending-users span {
+  color: var(--mid-gray);
+  font-weight: 100;
 }
