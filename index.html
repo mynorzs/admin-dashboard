@@ -6,10 +6,12 @@
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
     ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
     ></script>
 
     <link rel="stylesheet" href="./style.css" />
@@ -22,5 +24,91 @@
     />
     <title>Admin Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="logo"><ion-icon name="thumbs-up"></ion-icon>Dashboard</div>
+      <div class="nav-group">
+        <a href="">
+          <ion-icon name="home"></ion-icon>
+          Home
+        </a>
+        <a href="">
+          <ion-icon name="person"></ion-icon>
+          Profile
+        </a>
+        <a href="">
+          <ion-icon name="chatbox"></ion-icon>
+          Messages
+        </a>
+        <a href="">
+          <ion-icon name="time"></ion-icon>
+          History
+        </a>
+        <a href="">
+          <ion-icon name="list"></ion-icon>
+          Tasks
+        </a>
+        <a href="">
+          <ion-icon name="people"></ion-icon>
+          Communities
+        </a>
+      </div>
+      <div class="nav-group">
+        <a href="">
+          <ion-icon name="settings"></ion-icon>
+          Settings
+        </a>
+        <a href="">
+          <ion-icon name="help-circle"></ion-icon>
+          Support
+        </a>
+        <a href="">
+          <ion-icon name="shield-checkmark"></ion-icon>
+          Privacy
+        </a>
+      </div>
+    </nav>
+    <header>
+      <div>
+        <div>
+          <ion-icon name="search"></ion-icon>
+          <input type="text" />
+        </div>
+        <div>
+          <ion-icon name="notifications"></ion-icon>
+          <img
+            src="./img/Sticker 6.svg"
+            alt="user image of a panda"
+            width="40px"
+            height="40px"
+            class="user-image"
+          />
+          <a href="">Kevin Malone</a>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img
+            src="./img/Sticker 6.svg"
+            alt="user image of a panda"
+            width="64px"
+            height="64px"
+            class="user-image"
+          />
+          <div class="greeting">
+            <p>Hi there,</p>
+            <h1>Kevin Malone</h1>
+          </div>
+        </div>
+
+        <div>
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
+    <main></main>
+  </body>
 </html>
